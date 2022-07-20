@@ -4,17 +4,19 @@
 using namespace std;
 
 Car::Car()
+	:m_year(2019),
+	m_miles(0),
+	m_brand("Unspecified")
 {
-	m_year = 2019;
-	m_miles = 0;
-	m_brand = "Unspecified";
+
 }
 
 Car::Car(int year, int miles, string brand)
+	:m_year(year),
+	m_miles(miles),
+	m_brand(brand)
 {
-	m_year = year;
-	m_miles = miles;
-	m_brand = brand;
+
 }
 
 Car::~Car()
